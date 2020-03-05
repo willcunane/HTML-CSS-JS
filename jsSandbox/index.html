@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>JS Sandbox Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<script>
+    function myfunction(){
+        var a = "Welcome to the console"
+        console.log(a) ;
+    }
+</script>
+
+<body>
+    <h1>JS Sandbox Project</h1>
+
+    <button type="button" id="btn" onclick="demoFunc()">External Script</button>
+    <button type="button" id="btn" onclick="myfunction();">Internal Script</button>
+
+    <div id="container">
+        
+    </div>
+</body>
+
+</html>
