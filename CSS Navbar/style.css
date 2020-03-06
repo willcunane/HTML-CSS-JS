@@ -46,7 +46,7 @@ h1 {
     width: 12rem;
 }
 
-.navbar-nav {
+.navbar-container {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -123,14 +123,14 @@ h1 {
     .navbar {
       bottom: 0;
       width: 100vw;
-      height: 4rem;
+      height: 3.5rem;
     }
   
     .logo {
       display: none;
     }
   
-    .navbar-nav {
+    .navbar-container {
       flex-direction: row;
     }
 
