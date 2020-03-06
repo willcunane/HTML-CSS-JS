@@ -61,14 +61,17 @@ h1 {
   }
   .nav-item :hover {
     filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
+    background: var(--third);
+    color: var(--secondary);
+  }
+  .nav-link :hover {
+      background: transparent;
   }
   .nav-link {
     display: flex;
     align-items: center;
-    height: 4.5rem;
-    color: var(--text-primary);
+    height: 4rem;
+    color: var(--secondary);
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
     transition: var(--transition-speed);
@@ -77,21 +80,15 @@ h1 {
     display: none;
     margin-left: 1rem;
   }
-  .link-text :hover{
-      display: block;
-  }
   .nav-link img{
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .nav-link img:hover {
-      align-items: left;
-  }
+
   .navbar:hover .link-text {
-    display: block;
+    transition: 800ms;
+    display: inline;
   }
 
   /* Large screens */
@@ -126,7 +123,7 @@ h1 {
     .navbar {
       bottom: 0;
       width: 100vw;
-      height: 5rem;
+      height: 4rem;
     }
   
     .logo {
@@ -136,11 +133,29 @@ h1 {
     .navbar-nav {
       flex-direction: row;
     }
+
+    .navbar:hover .link-text {
+      display: none;
+    }
   
     .nav-link {
       justify-content: center;
     }
-  
+
+  .nav-item :hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--third);
+    color: var(--secondary);
+  }
+
+  .nav-link :hover {
+      background: transparent;
+  }
+
+    .navbar:hover {
+      width: 100%;
+  }
+    
     main {
       margin: 0;
     }
