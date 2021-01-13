@@ -1,0 +1,10 @@
+body {
+    background-color: blueviolet;
+    color: white;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    padding: 120px;
+}
